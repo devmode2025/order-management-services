@@ -47,15 +47,6 @@ Key Modules Explained:
 State Management (NgRx)
 For large-scale apps, NgRx provides predictable state management:
 
-orders/
-├── store/
-│   ├── actions/            # e.g., `loadOrders`, `updateOrder`
-│   ├── reducers/           # State updates
-│   ├── effects/            # Side effects (API calls)
-│   ├── selectors/          # State queries
-│   └── models/             # Interfaces (e.g., `Order`)
-
-
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
