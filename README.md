@@ -4,34 +4,6 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Angular Module Structure (Modular Design):
 
-src/app/
-│
-├── core/                   # Singleton services, auth guards, interceptors
-│   ├── auth/               # Auth guards, JWT service
-│   ├── interceptors/       # HTTP interceptors (e.g., JWT injection)
-│   └── services/           # Global services (e.g., API service)
-│
-├── shared/                 # Reusable components, pipes, directives
-│   ├── components/         # Dumb UI components (e.g., tables, modals)
-│   ├── pipes/              # Custom pipes (e.g., `currencyFormat`)
-│   └── directives/         # Custom directives (e.g., `roleBasedAccess`)
-│
-├── modules/                # Feature modules (lazy-loaded)
-│   ├── orders/             # Order management
-│   │   ├── components/     # Order list, detail, create
-│   │   ├── services/       # Order API calls
-│   │   ├── store/          # NgRx state (actions, reducers, effects)
-│   │   └── orders.module.ts
-│   │
-│   ├── inventory/          # Inventory dashboard
-│   ├── admin/              # Admin panel (RBAC)
-│   ├── reporting/          # Analytics dashboards
-│   └── payment/            # Payment processing
-│
-├── assets/                 # Static files (images, fonts)
-├── environments/           # Dev/Prod configs
-└── app.module.ts           # Root module (imports CoreModule)
-
 Key Modules Explained:
 
 1. CoreModule
